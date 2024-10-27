@@ -1,4 +1,4 @@
-<div class="mh-full w-full flex justify-center items-center">
+<div class="h-full w-full flex justify-center items-center">
   <div
     class="rounded-[20px] bg-[#F3F0F0] w-[80%] max-w-md flex flex-col justify-center items-center p-8 shadow-xl"
   >
@@ -73,7 +73,7 @@
       <button
         type="submit"
         [disabled]="isLoading || !loginForm.valid"
-        class="w-full py-3 rounded-[20px] flex justify-center items-center bg-black text-white shadow hover:shadow-xl"
+        class="w-full py-3 rounded-[20px] flex justify-center items-center bg-black text-white shadow hover:shadow-xl duration-1000"
       >
         @if (!isLoading) { Ingresar } @if (isLoading) {
         <svg

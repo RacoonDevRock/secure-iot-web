@@ -1,1 +1,24 @@
-<p>panel works!</p>
+<div class="text-center flex flex-row">
+  <div class="w-[15%]">
+    <app-sidebar (sectionSelected)="onSectionSelected($event)" />
+  </div>
+  <div class="w-[85%]">
+    @switch (currentSection) {
+        @case ('doors') {
+            <app-doors />
+        }
+        @case ('ligth') {
+            <app-lights />
+        }
+        @case ('cam') {
+            <app-cam />
+        }
+        @case ('notify') {
+            <app-notify />
+        }
+        @case ('control') {
+            <app-control />
+        }
+    }
+  </div>
+</div>
